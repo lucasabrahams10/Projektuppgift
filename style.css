@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    --brightOrange: hsl(31, 77%, 52%);
+    --dark: hsl(184, 100%, 22%);
+    --veryDark: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.6);
+    --very-light-gray: rgba(242, 242, 242, 0.907);
+}
+
+body {
+    background-color: var(--very-light-gray);
+    margin: auto;
+    font-size: 15px;
+    width: 450px;
+    height: 100%;
+    place-items: center;
+}
+
+.header,
+main {
+    margin-top: 100px;
+    padding: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: var(--transparent-white);
+}
+
+main h1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: var(--very-light-gray);
+}
+
+main p {
+    color: var(--transparent-white);
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.div1 {
+    background-color: var(--brightOrange);
+    width: 410px;
+    height: 560px;
+    padding: 60px;
+    border-radius: 10px 10px 0 0;
+}
+
+.div2 {
+    background-color: var(--dark);
+    width: 410px;
+    height: 560px;
+    padding: 60px;
+    border-radius: 0;
+}
+
+.div3 {
+    background-color: var(--veryDark);
+    width: 410px;
+    height: 560px;
+    padding: 60px;
+    border-radius: 0 0 10px 10px;
+}
+
+.btn {
+    margin-top: 20px;
+    background: var(--very-light-gray);
+    border-radius: 35px;
+    border-color: #fff;
+    color: black;
+    mix-blend-mode: screen;
+    font-size: 20px;
+    padding: 17px 40px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.btn:hover {
+    background: black;
+    mix-blend-mode: screen;
+    color: #fff;
+    font-size: 20px;
+    padding: 17px 40px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+footer {
+    margin: auto;
+    width: 350px;
+    font-size: 12px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--veryDark);
+    padding-bottom: 20px;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+footer a:hover {
+    color: var(--brightOrange);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+
+/* DESKTOP */
+@media (min-width: 960px) {
+    body {
+        background-color: var(--very-light-gray);
+        margin: auto;
+        font-size: 15px;
+        width: 1000px;
+        height: 100%;
+        place-items: center;
+    }
+
+    .header,
+    main {
+        margin-top: 50px;
+        padding: 20px;
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+        color: var(--transparent-white);
+        display: flex;
+    }
+
+    main h1 {
+        font-size: 40px;
+        text-transform: uppercase;
+        font-family: 'Big Shoulders Display', sans-serif;
+        color: var(--very-light-gray);
+    }
+
+    main p {
+        color: var(--transparent-white);
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .div1 {
+        background-color: var(--brightOrange);
+        width: 310px;
+        height: 500px;
+        padding: 60px;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .div2 {
+        background-color: var(--dark);
+        width: 310px;
+        height: 500px;
+        padding: 61px;
+        border-radius: 0;
+    }
+
+    .div3 {
+        background-color: var(--veryDark);
+        width: 310px;
+        height: 500px;
+        padding: 60px;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .btn {
+        margin-top: 40px;
+        background: var(--very-light-gray);
+        border-radius: 35px;
+        border-color: #fff;
+        color: black;
+        mix-blend-mode: screen;
+        font-size: 15px;
+        padding: 14px 33px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all .2s ease-in;
+    }
+
+    .btn:hover {
+        background: black;
+        mix-blend-mode: screen;
+        color: #fff;
+        font-size: 15px;
+        padding: 14px 33px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+    }
+
+    footer {
+        margin: auto;
+        width: 350px;
+        font-size: 12px;
+        font-family: 'Lexend Deca', sans-serif;
+        color: var(--veryDark);
+        padding-bottom: 20px;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    footer a:hover {
+        color: var(--brightOrange);
+    }
+
+    footer a {
+        text-decoration: none;
+    }
+
+}
